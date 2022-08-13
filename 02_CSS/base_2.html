@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists and containers</title>
+    <style>
+        .name{font-weight: bold;
+             }
+        .main_list{
+            width: 350px;
+            list-style-type: upper-roman;
+                  }
+        .inner_list{
+            list-style-type: lower-roman;
+                   }
+         div {
+            
+            background-color: black;
+            color: green;
+            width: 400px;
+            max-height: 80px;
+            overflow: auto;
+
+         }          
+
+    </style>
+</head>
+<body>
+    <ul class="main_list">
+        <li class="name">Контейнер с кодом</li>
+
+                <ul class="inner_list">
+                    <li>Цвет фона:черный</li>
+                    <li>Цвет текста:зеленый</li>
+                    <li>Ширина:400рх</li>
+                    <li>Максимальная величина контейнера: 4-е строки</li>
+                    <li>Переполнение автоматическое</li>
+                </ul>
+
+
+        <li class="name">Список</li>
+                 <ul class="inner_list">
+                    <li>Ширина:350рх</li>
+                    <li>Тип списка: римские цифры</li>
+                    <li>Тип вложенного списка: римские цифры нижний регистр</li>
+        </ul>
+    </ul>
+                
+           <div>
+            <CODE>
+
+                #!/usr/bin/env python
+                print 'Hello. I am a python program.'
+                name = raw_input("What is your name?")
+                print "Hello there, " + name + "!"
+                #!/usr/bin/env python
+                print 'Hello. I am a python program.'
+                name = raw_input("What is your name?")
+                print "Hello there, " + name + "!"
+                #!/usr/bin/env python
+                print 'Hello. I am a python program.'
+                name = raw_input("What is your name?")
+                print "Hello there, " + name + "!"
+                #!/usr/bin/env python
+                print 'Hello. I am a python program.'
+                name = raw_input("What is your name?")
+                print "Hello there, " + name + "!"
+            </CODE>
+           </div>
+
+</body>
+</html>
