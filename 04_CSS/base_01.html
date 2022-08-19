@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1~div {
+        border: solid 1px;
+        border-bottom-left-radius: 6px;
+        border-top-right-radius: 6px;
+        margin: 0.5em;
+           }
+    h2~ul{
+        list-style-type: none;
+         }
+    li::before{
+        content: url(img/list.jpg);
+               }
+    a:link{color: blue; cursor:grab;}
+    a:visited{color: rgba(60, 255, 0, 0.63); }
+    a:hover{
+        font-weight: bold;
+           }
+    a:active {
+        font-style: italic;
+              }  
+  
+     a{
+        position: relative;} 
+     a>span{
+           position:absolute;
+           right: -30%;
+           top: -10%;
+           display: none;}       
+    li>a:hover span{
+        display: block;} 
+   
+    
+</style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+    <div>
+        .DOC или .doc (от англ. <a href="links/MSWord.html" target="_blank"><img src="img/downloaded.png" alt="img_file">document</a> )-расширение имени файла, используемое для файлов, <br>
+        представляющих текст, с разметкой или без. Расширение .DOC часто использовалось для <br>
+        обозначения простых текстовых файлов без формирования, однако позже стало <br>
+        использлваться для двоичных форматов с разметкой. <br>
+        <a href="links/MSWord1.html" target="_blank"> MS Word<img src="img/Word.jpg" alt="icon_word"></a> 
+    </div>
+    <div>
+        Portable document format(<a href="links/PDF.html" target="_blank"><img src="img/downloaded.png" alt="img_file">PDF</a>)-межплатформенный формат документов, <br>
+        разработанных фирмой Adobe Systems с использование ряда возможностей языка Postsscript. <br>
+        <a href="links/PDF1.html" target="_blank">Документ PDF<img src="img/PDF.png" alt="icon_pdf"></a>.
+    </div>
+    <div>
+        ZIP-это популярный формат сжатия данных и архивации файлов. Файл в этом формате <br>
+        обычно имеет расширение <a href="links/zip.html" target="_blank"><img src="img/downloaded.png" alt="img_file">.zip</a> и хранит в сжатом или несжатом виде один или несколько <br>
+        файлов, которые можно из него извлечь путем распаковки с помощью специальной <br>
+        программы. <br>
+        <a href="links/zip2.html" target="_blank">Архив <img src="img/ZIP.gif" alt="icon_zip"></a>
+
+    </div>
+    <h2>Этот список файлов</h2>
+    <ul>
+        <li><a href="Word_document" target="_blank"> MS Word <span><img src="img/Word.jpg" alt="icon_word"></span></a></li>
+        <li><a href="PDF_document" target="_blank">Документ PDF<span><img src="img/PDF.png" alt="icon_pdf"></span></a></li>
+        <li><a href="Archive" target="_blank">Архив<span><img src="img/ZIP.gif" alt="icon_zip"></span></a></li>
+    </ul>
+</body>
+</html>
