@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        caption{
+           caption-side: bottom;}
+        
+                  
+             
+        
+    </style>
+</head>
+<body>
+    <table>
+        <caption>ДАННЫЕ О СОТРУДНИКАХ</caption>
+           <tr>
+               <th>ФИО</th>
+               <th>пол</th>
+               <th>должность</th>
+               <th>Дата рождения</th>
+               <th>Данные 01</th>
+               <th>Данные 02</th>
+           </tr>
+           <tr>
+               <td class="bold">Иванов Иван Иванович</td>
+               <td>М</td>
+               <td>начальник</td>
+               <td>01.01.1960</td>
+               <td>4567</td>
+               <td>3453</td>
+           </tr>
+           <tr>
+               <td class="bold">Петрова Илонна Петровна</td>
+               <td>Ж</td>
+               <td>секретарь</td>
+               <td>01.01.1989</td>
+               <td>98795</td>
+               <td>46523</td>
+           </tr>
+           <tr>
+               <td class="bold">Сидоров Илья Игоревич</td>
+               <td>М</td>
+               <td>Бухгалтер</td>
+               <td>01.01.1979</td>
+               <td>743434</td>
+               <td>987979</td>
+           </tr>
+           <tr>
+               <td class="bold">Пупин Федор Федорович</td>
+               <td>М</td>
+               <td>Водитель</td>
+               <td>01.01.1963</td>
+               <td>74323434</td>
+               <td>9232379</td>
+           </tr>
+           <tr>
+               <td class="bold">Крупин Сергей Иванович</td>
+               <td>М</td>
+               <td>Водитель2</td>
+               <td>01.01.1983</td>
+               <td>3234534</td>
+               <td>923123379</td>
+           </tr>
+    </table>
+            <button>Нет скрытых строк</button>
+
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script>
+     $(document).ready(function($){
+         $('table').css('borderStyle', 'dotted')
+                   .css('borderWidth','3px') 
+                   .css('borderColor','black')
+                
+               
+        $('tr:even').css('background-color', 'hsl(355deg 11% 78%)')
+        $('tr:first').css('background-color', '#808080') 
+                     .css('color', 'white')
+        $('.bold').css('font-weight', 'bold') 
+        $('th').css('borderBottomStyle', 'dotted' )
+               .css('borderWidth', '1px' )  
+               .css('borderColor','black')  
+        $('td').css('borderBottomStyle', 'dotted' )
+               .css('borderWidth', '1px' )  
+               .css('borderColor','black')  
+        $('th').css('borderRightStyle', 'dotted' )
+               .css('borderWidth', '1px' )  
+               .css('borderColor','black')  
+        $('td').css('borderRightStyle', 'dotted' )
+               .css('borderWidth', '1px' )  
+               .css('borderColor','black')  
+        $('button').css('background-color', '#0c4bc3')
+                   .css('color', 'white') 
+                   .css('border', 'none')    
+                   .height(30)   
+                    
+        $('tr').click(function(){$(this).slideUp()})
+        $('tr').click(function(){$('button').html('Показать скрыте элементы')})
+        
+                   
+        $('button').click(function(){$('tr').slideDown()})
+        $('button').click(function(){$(this).text('Нет скрытых строк')})
+                   
+        
+    })
+        
+    
+   
+        
+                   
+     
+        
+             
+        
+    
+</script>
+</body>
+</html>
